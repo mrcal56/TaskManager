@@ -18,10 +18,11 @@ namespace TaskManager
     public partial class Form1 : Form
     {
         private List<string> tasks = new List<string>();
-        private const string filePath = "tasks.txt";
+        private string filePath;
         public Form1()
         {
             InitializeComponent();
+            filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "tasks.txt"); // Ruta a Documentos
             LoadTasks();
         }
 
