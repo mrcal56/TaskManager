@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="TaskManager.exe" version="1.0.0.0" publicKeyToken="601d7c0f9ad2e145" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="tasks.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="TaskManager" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="TaskManager.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opciones del manifiesto de Control de cuentas de usuario
+          Si quiere cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el
+          nodo requestedExecutionLevel por alguno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si desea usar la virtualización de archivos y del Registro para la
+         compatibilidad con versiones anteriores, elimine el nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TaskManager.exe" size="232936">
+      <assemblyIdentity name="TaskManager" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>YC8/BRC0xYoEX9+9HY0fdlgaPV65uuzcSQoOueRWcoM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="TaskManager.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="tasks.ico" size="107618">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XhbiqIdfIez+ljjvd2/Qe+WWXX9WazVb0fM0kdInhe0=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-6P8VBI5\Marlon" issuerKeyHash="78afe816274e3fc523704cd58b8c559f60e2bf20" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>mqn0ud1pA2pYyycAKP+qJvUe66uec8/0w+4jNXZV0h0=</DigestValue></Reference></SignedInfo><SignatureValue>qHYefUuNAj8aExf+o+tdjYbjvJQzArrbPCaHYNQJHj0iM9XwQ8n+z+BV1idTG09N7x0V5INBjh29CyyQJErELInIJ2NSaZHHY3DjeZCu9j6H5FTF77dgpgFMXikE/hOVxxWj0pyiScYhNRdLgyF+ZkmhxxLpE+Hx/ADGvCtAC9Q=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tksWdgnpGAnG29JMbgL6YaSPWi0ft2cHj5f9ngzU/Sej7Mrr4NuxDJSWJUoOqOlIGh7SpHoFDXa2/6Ob/NxIpgxxBIqzkSHEY3GY+bfhNvUqjdibT+PEyelSClapk17L+Nz+pE2OKDyhmN7srXfqlsM8wwdg8V0jVkVv22nlpTE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="1dd255763523eec3f4cf739eabeb1ef526aaff280027cb586a0369ddb9f4a99a" Description="" Url=""><as:assemblyIdentity name="TaskManager.exe" version="1.0.0.0" publicKeyToken="601d7c0f9ad2e145" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-6P8VBI5\Marlon</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>JI6K6Vtq6GJT7Antx5S2KOqotE7kcFMWter9U0/Rt14=</DigestValue></Reference></SignedInfo><SignatureValue>amJxLMOaHW30lyS3H8cR9cnSn9nWFrfYWUaPZqCFHPqcjUpwKmZ9v4TLEcMLnO/zHPal/ToG0QDnVR0K8CK4sFNYfd/yGjpL603oUy5Dc9G9gMtRWuIK5bdrnErYSPqbszWM4ySC2cre3Ht+kIrlUc7NQ7qV1d+CVnrJAjsJFsw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tksWdgnpGAnG29JMbgL6YaSPWi0ft2cHj5f9ngzU/Sej7Mrr4NuxDJSWJUoOqOlIGh7SpHoFDXa2/6Ob/NxIpgxxBIqzkSHEY3GY+bfhNvUqjdibT+PEyelSClapk17L+Nz+pE2OKDyhmN7srXfqlsM8wwdg8V0jVkVv22nlpTE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB8TCCAVqgAwIBAgIQJf0I6/AcpIxIotGzoVq+6jANBgkqhkiG9w0BAQsFADA3MTUwMwYDVQQDHiwARABFAFMASwBUAE8AUAAtADYAUAA4AFYAQgBJADUAXABNAGEAcgBsAG8AbjAeFw0yNDA4MTAwNTAwNDNaFw0yNTA4MTAxMTAwNDNaMDcxNTAzBgNVBAMeLABEAEUAUwBLAFQATwBQAC0ANgBQADgAVgBCAEkANQBcAE0AYQByAGwAbwBuMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC2SxZ2CekYCcbb0kxuAvphpI9aLR+3ZwePl/2eDNT9J6Psyuvg27EMlJYlSg6o6UgaHtKkegUNdrb/o5v83EimDHEEirORIcRjcZj5t+E29SqN2JtP48TJ6VIKVqmTXsv43P6kTY4oPKGY3uytd+qWwzzDB2DxXSNWRW/baeWlMQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAAAs/vkbINi+qo3R1ewt226ltRE5njSuAA9cnIxeTSB+Fhn655TXl5Q/fjWuDXzrO/DWqtkGmQxAhET4NiWYQlULpgNN74xCLpBzTlLVXFwYibYUZ2TN4MTyvrKbAwJttzTiAF8o83c6uAgzybZ1lpQFhG5tnIG/s/oovFqO2g4Y</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
